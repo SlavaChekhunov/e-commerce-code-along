@@ -6,6 +6,12 @@ header {
     background-color: $tertiary;
     //hey, so the bleed effect is due to both elements having a wrapper, instead of them both having one single wrapper,
     //however in higher resolutions you might need to use a background image instead. 
+
+    //bleeds because you attached it to individual divs and not the whole thing.
+    // .wrapper {
+    //     border: 1px solid $primary;
+    // }
+    
     .headerImgContainer {
         width: 45%;
         
@@ -15,7 +21,7 @@ header {
             vertical-align: middle;
         }
     }
-
+//we need the wrapper on individual elements because the content inside is always inside the box, its contained and doesnt break away. 
     .headerContent {
         width: 55%;
 
