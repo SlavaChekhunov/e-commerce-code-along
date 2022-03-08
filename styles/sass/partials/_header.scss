@@ -1,0 +1,27 @@
+header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 90px;
+    flex-wrap: wrap;
+    background-color: $tertiary;
+    //hey, so the bleed effect is due to both elements having a wrapper, instead of them both having one single wrapper,
+    //however in higher resolutions you might need to use a background image instead. 
+    .headerImgContainer {
+        width: 45%;
+        
+        //need to directly target the img and be 100% of its parent container to not have it spill out
+        img {
+            max-width: 100%; //can use flexbasis instead, however they only apply to flex containers.
+            vertical-align: middle;
+        }
+    }
+
+    .headerContent {
+        width: 55%;
+
+        .contentContainer {
+            width: 65%;
+            margin: 0 auto;
+        }
+    }
+}
