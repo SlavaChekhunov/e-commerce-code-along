@@ -1,0 +1,24 @@
+//instagram section code example
+.gallery {
+    background: $tertiary;
+    padding: 90px 0;
+    margin: 0;
+
+    h2 {
+        max-width: 500px;
+    }
+}
+
+.galleryItems {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .item {
+        width: 15%;
+        img {
+            width: 100%;
+            //to get rid of white ghost space under the img, so put this in general styles.
+            display: block;
+        }
+    }
+}
