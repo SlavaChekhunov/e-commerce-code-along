@@ -732,7 +732,8 @@ footer .social a:hover, footer .social a:focus {
           flex-direction: column;
 }
 
-input, textarea {
+input,
+textarea {
   padding: 0 0 10px 5px;
   border: none;
   margin-bottom: 40px;
@@ -767,14 +768,16 @@ input::-ms-input-placeholder, textarea::-ms-input-placeholder {
   line-height: 1.2rem;
   text-transform: uppercase;
 }
-input::placeholder, textarea::placeholder {
+input::placeholder,
+textarea::placeholder {
   font-size: 0.8rem;
   color: #084b6d;
   opacity: 1;
   line-height: 1.2rem;
   text-transform: uppercase;
 }
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
   border-bottom: 1px solid #084b6d;
 }
 
@@ -802,6 +805,10 @@ select {
   font-size: 0.8rem;
   line-height: 1.2rem;
   text-transform: uppercase;
+  background-image: url(../assets/caret-down-solid.svg);
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-position: 95% center;
 }
 
 option {
@@ -830,6 +837,15 @@ option {
   }
   footer .footerNav nav ul {
     width: auto;
+  }
+
+  .mapFormContainer .map {
+    width: 45%;
+  }
+
+  .contactForm {
+    width: calc(55% - 50px);
+    margin-left: 50px;
   }
 }
 @media (max-width: 800px) {
@@ -896,5 +912,9 @@ option {
   }
   footer .socialIcons {
     margin-bottom: 30px;
+  }
+
+  .mapFormContainer .map {
+    width: 100%;
   }
 }
