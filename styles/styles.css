@@ -350,6 +350,10 @@ a {
   transition: 0.3s;
 }
 
+/* _typography.scss */
+/* import Jakarta Sans font */
+/* import Jakarta Sans font in bold */
+/* import Young Serif font */
 /* _baseStyles.scss */
 .wrapper {
   max-width: 1260px;
